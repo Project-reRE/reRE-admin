@@ -1,8 +1,9 @@
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import routes from "./routes";
-import { useRoutes } from "react-router-dom";
-import { createCustomTheme } from "./theme";
-import { THEMES } from "./theme/theme";
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import routes from './routes';
+import { useRoutes } from 'react-router-dom';
+import { createCustomTheme } from './theme';
+import { THEMES } from './theme/theme';
+import GlobalStyle from 'theme/globalStyles';
 
 function App() {
   const routing = useRoutes(routes);
@@ -12,8 +13,8 @@ function App() {
 
   return (
     <ThemeProvider theme={{ ...theme }}>
-      {/* <GlobalStyle /> */}
-      <CssBaseline /> {/* css reset */}
+      <GlobalStyle />
+      <CssBaseline />
       {routing}
     </ThemeProvider>
   );

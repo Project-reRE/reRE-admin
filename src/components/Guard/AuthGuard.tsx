@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
-import { Navigate } from "react-router-dom";
-import { PATH } from "../../constant/paths";
+import type { ReactNode } from 'react';
+import { Navigate } from 'react-router-dom';
+import { PATH } from 'constant/paths';
 
 interface AuthGuardProps {
   children: ReactNode;
@@ -8,11 +8,11 @@ interface AuthGuardProps {
 
 const AuthGuard = (props: AuthGuardProps) => {
   const children = props?.children;
-  const isCustomLogin = localStorage.getItem("isCustomLogin") === "true";
+  // const isCustomLogin = localStorage.getItem('isCustomLogin') === 'true';
 
-  if (!isCustomLogin) {
-    return <Navigate to={PATH.LOGIN} />;
-  }
+  // if (!isCustomLogin) {
+  //   return <Navigate to={PATH.LOGIN} />;
+  // }
 
   return <>{children}</>;
 };

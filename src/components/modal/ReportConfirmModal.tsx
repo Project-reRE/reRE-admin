@@ -17,23 +17,28 @@ const style = {
   p: 4,
 };
 
-const LoginFailedModal = ({ open, handleClose }: Props) => {
+const ReportConfirmModal = ({ open, handleClose }: Props) => {
   return (
     <Modal open={open} onClose={handleClose}>
       <SBox sx={style}>
         <Typography variant="h6" component="h2">
-          로그인
+          한 줄 평 숨기기 처리
         </Typography>
-        <Typography sx={{ mt: 2 }}>아이디 또는 비밀번호가 잘못되었습니다.</Typography>
-        <Button variant="contained" onClick={handleClose}>
-          확인
-        </Button>
+        <Typography sx={{ mt: 2 }}>해당 한 줄 평을 숨기기 처리하겠습니까?</Typography>
+        <div style={{ display: 'flex', gap: 20 }}>
+          <Button variant="outlined" onClick={handleClose}>
+            취소
+          </Button>
+          <Button variant="contained" onClick={handleClose}>
+            숨기기
+          </Button>
+        </div>
       </SBox>
     </Modal>
   );
 };
 
-export default LoginFailedModal;
+export default ReportConfirmModal;
 
 const SBox = styled(Box)`
   display: flex;

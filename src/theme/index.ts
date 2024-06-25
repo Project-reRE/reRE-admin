@@ -1,8 +1,8 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles';
 
-import type { Theme, ThemeOptions } from "@mui/material";
-import { THEMES } from "./theme";
-import merge from "lodash/merge";
+import type { Theme, ThemeOptions } from '@mui/material';
+import { THEMES } from './theme';
+import merge from 'lodash/merge';
 
 export interface ThemeConfigType {
   theme?: string;
@@ -16,44 +16,44 @@ const baseOptions: ThemeOptions = {
     MuiAvatar: {
       styleOverrides: {
         fallback: {
-          height: "75%",
-          width: "75%",
+          height: '75%',
+          width: '75%',
         },
       },
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: "none",
+          textTransform: 'none',
         },
       },
     },
     MuiCssBaseline: {
       styleOverrides: {
-        "*": {
-          boxSizing: "border-box",
+        '*': {
+          boxSizing: 'border-box',
         },
         html: {
-          MozOsxFontSmoothing: "grayscale",
-          WebkitFontSmoothing: "antialiased",
-          height: "100%",
-          width: "100%",
+          MozOsxFontSmoothing: 'grayscale',
+          WebkitFontSmoothing: 'antialiased',
+          height: '100%',
+          width: '100%',
         },
         body: {
-          height: "100%",
+          height: '100%',
         },
-        "#root": {
-          height: "100%",
+        '#root': {
+          height: '100%',
         },
-        "#nprogress .bar": {
-          zIndex: "2000 !important",
+        '#nprogress .bar': {
+          zIndex: '2000 !important',
         },
       },
     },
     MuiCardHeader: {
       defaultProps: {
         titleTypographyProps: {
-          variant: "h6",
+          variant: 'h6',
         },
       },
     },
@@ -61,22 +61,22 @@ const baseOptions: ThemeOptions = {
       styleOverrides: {
         root: {
           borderRadius: 3,
-          overflow: "hidden",
+          overflow: 'hidden',
         },
       },
     },
     MuiListItemIcon: {
       styleOverrides: {
         root: {
-          minWidth: "auto",
-          marginRight: "16px",
+          minWidth: 'auto',
+          marginRight: '16px',
         },
       },
     },
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundImage: "none",
+          backgroundImage: 'none',
         },
       },
     },
@@ -85,30 +85,30 @@ const baseOptions: ThemeOptions = {
     button: {
       fontWeight: 600,
     },
-    fontFamily: "Pretendard, sans-serif",
+    fontFamily: 'Pretendard, sans-serif',
     h1: {
       fontWeight: 600,
-      fontSize: "3.5rem",
+      fontSize: '3.5rem',
     },
     h2: {
       fontWeight: 600,
-      fontSize: "3rem",
+      fontSize: '3rem',
     },
     h3: {
       fontWeight: 600,
-      fontSize: "2.25rem",
+      fontSize: '2.25rem',
     },
     h4: {
       fontWeight: 600,
-      fontSize: "2rem",
+      fontSize: '2rem',
     },
     h5: {
       fontWeight: 600,
-      fontSize: "1.5rem",
+      fontSize: '1.5rem',
     },
     h6: {
       fontWeight: 600,
-      fontSize: "1.125rem",
+      fontSize: '1.125rem',
     },
     overline: {
       fontWeight: 600,
@@ -122,37 +122,37 @@ const themesOptions: Record<string, ThemeOptions> = {
       MuiTableCell: {
         styleOverrides: {
           root: {
-            borderBottom: "1px solid rgba(145, 158, 171, 0.24)",
+            borderBottom: '1px solid rgba(145, 158, 171, 0.24)',
           },
         },
       },
     },
     palette: {
       background: {
-        default: "#171c24",
-        paper: "#222b36",
+        default: '#171c24',
+        paper: '#222b36',
       },
-      divider: "rgba(145, 158, 171, 0.24)",
+      divider: 'rgba(145, 158, 171, 0.24)',
       error: {
-        contrastText: "#ffffff",
-        main: "#f44336",
+        contrastText: '#ffffff',
+        main: '#f44336',
       },
-      mode: "dark",
+      mode: 'dark',
       primary: {
-        contrastText: "#ffffff",
-        main: "#688eff",
+        contrastText: '#ffffff',
+        main: '#688eff',
       },
       success: {
-        contrastText: "#ffffff",
-        main: "#4caf50",
+        contrastText: '#ffffff',
+        main: '#4caf50',
       },
       text: {
-        primary: "#ffffff",
-        secondary: "#919eab",
+        primary: '#ffffff',
+        secondary: '#919eab',
       },
       warning: {
-        contrastText: "#ffffff",
-        main: "#ff9800",
+        contrastText: '#ffffff',
+        main: '#ff9800',
       },
     },
   },
