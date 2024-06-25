@@ -4,7 +4,6 @@ import { Box, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/mate
 
 import CustomPagination, { PaginationLimitParam } from './Pagination';
 import { useNavigate } from 'react-router-dom';
-import React, { EventHandler } from 'react';
 
 interface HorizontalTableDataConfigType {
   title: string;

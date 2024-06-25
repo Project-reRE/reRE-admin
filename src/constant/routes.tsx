@@ -1,8 +1,8 @@
 import { RouteObject } from 'react-router-dom';
-import Login from './page/Login';
-import UserListPage from './page/user/UserListPage';
-import DashboardLayout from './components/DashboardLayout';
-import { AuthGuard, GuestGuard } from './components/Guard';
+import Login from '../page/Login';
+import UserListPage from '../page/user/UserListPage';
+import DashboardLayout from '../components/DashboardLayout';
+import { AuthGuard, GuestGuard } from '../components/Guard';
 import MovieOperatePage from 'page/operate/MovieOperatePage';
 import MovieReportListPage from 'page/operate/MovieReportListPage';
 import MovieReportDetailPage from 'page/operate/MovieReportDetailPage';

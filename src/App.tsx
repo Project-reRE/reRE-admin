@@ -1,9 +1,10 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import routes from './routes';
 import { useRoutes } from 'react-router-dom';
+
+import GlobalStyle from 'theme/globalStyles';
 import { createCustomTheme } from './theme';
 import { THEMES } from './theme/theme';
-import GlobalStyle from 'theme/globalStyles';
+import routes from './constant/routes';
 
 function App() {
   const routing = useRoutes(routes);
