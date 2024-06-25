@@ -9,7 +9,7 @@ import routes from './constant/routes';
 function App() {
   const routing = useRoutes(routes);
   const theme = createCustomTheme({
-    theme: THEMES.DARK,
+    theme: THEMES.LIGHT,
   });
 
   return (

@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 import type { Theme, ThemeOptions } from '@mui/material';
 import { THEMES } from './theme';
 import merge from 'lodash/merge';
+import { lightShadows } from './shadows';
 
 export interface ThemeConfigType {
   theme?: string;
@@ -117,6 +118,51 @@ const baseOptions: ThemeOptions = {
 };
 
 const themesOptions: Record<string, ThemeOptions> = {
+  [THEMES.LIGHT]: {
+    components: {
+      MuiInputBase: {
+        styleOverrides: {
+          input: {
+            '&::placeholder': {
+              opacity: 0.86,
+              color: '#42526e',
+            },
+          },
+        },
+      },
+    },
+    palette: {
+      action: {
+        active: '#6b778c',
+      },
+      background: {
+        default: '#F9FAFC',
+        paper: '#ffffff',
+      },
+      error: {
+        contrastText: '#ffffff',
+        main: '#f44336',
+      },
+      mode: 'light',
+      primary: {
+        contrastText: '#ffffff',
+        main: '#C85A27',
+      },
+      success: {
+        contrastText: '#ffffff',
+        main: '#4caf50',
+      },
+      text: {
+        primary: '#172b4d',
+        secondary: '#6b778c',
+      },
+      warning: {
+        contrastText: '#ffffff',
+        main: '#ff9800',
+      },
+    },
+    shadows: lightShadows,
+  },
   [THEMES.DARK]: {
     components: {
       MuiTableCell: {
