@@ -2,15 +2,21 @@ import { Box, Button, Card, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
-const MovieOperatePage = () => {
+const ContentsPage = () => {
   const navigate = useNavigate();
 
   return (
     <SWrapper>
-      <Typography variant="h5">운영 관리 {'>'} 영화</Typography>
+      <Typography variant="h5">콘텐츠 관리 {'>'} 영화</Typography>
       <SCard>
         <Box>
-          재평가 신고 관리{' '}
+          메인 탑 배너 관리
+          <Button variant="contained" onClick={() => navigate('reports')}>
+            관리
+          </Button>
+        </Box>
+        <Box>
+          데일리 랭킹 장르 관리
           <Button variant="contained" onClick={() => navigate('reports')}>
             관리
           </Button>
@@ -20,7 +26,7 @@ const MovieOperatePage = () => {
   );
 };
 
-export default MovieOperatePage;
+export default ContentsPage;
 
 const SWrapper = styled.div`
   padding: 24px;

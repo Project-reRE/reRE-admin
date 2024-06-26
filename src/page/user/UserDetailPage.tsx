@@ -242,6 +242,7 @@ const SMovieCommentSection = styled.div`
         display: flex;
         flex-direction: column;
         gap: 12px;
+        background-color: #f0f0f0;
         border: 1px solid rgba(255, 255, 255, 0.23);
         box-sizing: border-box;
         border-radius: 10px;
